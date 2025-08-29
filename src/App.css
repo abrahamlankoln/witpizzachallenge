@@ -1,42 +1,30 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.title {
+  display: block;           /* Blok elementi, tüm satırı kaplar */
+  width: 100%;              /* Satırın tamamını kapla */
+  text-align: center;       /* Yazıyı ortala */
+  background-color: red;    /* Arka plan kırmızı */
+  color: white;             /* Yazı rengi beyaz */
+  padding: 50px 0;          /* Üst-alt boşluk */
+  margin: 0;                /* Varsayılan üst-alt boşluğu kaldır */
+  box-sizing: border-box;   /* Padding toplam genişliği bozmaz */
+}
+.genel {
+  max-width: 600px;    /* Maksimum genişlik */
+  margin: 0 auto;      /* Ortala */
+  padding: 10px;       /* İç boşluk */
+}
+.boyut {
+  max-width: 600px;
+  display: flex;       /* Child’ları yan yana dizer */
+  gap: 20px;           /* İki child arası boşluk */
+}
+.boyut fieldset {
+ border: none;
+}
+.ratio {
+  display: flex;
+  flex-direction: column; /* Alt alta dizmek için */
+  align-items: flex-start; /* Sola yaslar */
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
