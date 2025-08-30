@@ -1,10 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import App from './App.jsx';
+import HomePage from './HomePage.jsx';
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+ReactDOM.render(
+  <BrowserRouter>
+    <Switch>
+      <Route exact path="/" component={HomePage} />
+      <Route path="/order" component={App} />
+    </Switch>
+  </BrowserRouter>,
+  document.getElementById('root')
+);

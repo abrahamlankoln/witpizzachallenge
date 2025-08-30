@@ -1,0 +1,36 @@
+.homepage {
+  height: 100vh; /* tüm ekran */
+  display: flex;
+  flex-direction: column; /* alt alta dizmek için */
+  justify-content: center; /* dikeyde ortala */
+  align-items: center;     /* yatayda ortala */
+  text-align: center;
+  background: url("/home-banner.png") no-repeat center center;
+  background-size: cover;
+   padding-top: 0;
+}
+
+.homepage button {
+    width: 15%;
+  padding: 12px 24px;          /* buton boyutu */
+  font-size: 16px;              /* yazı boyutu */
+  font-weight: bold;            /* yazıyı kalın yap */
+  border-radius: 25px;          /* köşeleri yuvarla */
+  border: none;                 /* çerçeveyi kaldır */
+  background-color: #ffcc00;    /* sarı arka plan */
+  cursor: pointer;              /* fare imlecini pointer yap */
+  transition: background 0.3s;  /* hover animasyonu için */
+}
+
+.homepage button:hover {
+  background-color: #ffaa00;    /* hover efekti */
+}
+.yazi1{
+    font-size: 50px;
+    color: white;
+}
+.yazi2{
+    font-size: 90px;
+    color: white;
+     width: 75%; 
+}

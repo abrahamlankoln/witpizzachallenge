@@ -14,7 +14,8 @@
   padding: 10px;       /* İç boşluk */
   display: flex;
   flex-direction: column; /* Alt alta dizmek için */
-  gap: 20px; /* Tüm child’lar arasındaki boşluğu ayarlar */
+  gap: 40px; /* Tüm child’lar arasındaki boşluğu ayarlar */
+
 
 }
 .boyut {
