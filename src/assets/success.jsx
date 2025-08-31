@@ -1,16 +1,16 @@
-import './succes.css';
+import './success.css';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-function succes() {
+function success() {
   const history = useHistory();
 
   return (
-    <div className="succes">
-        
-
+    <div className="success">
+<img src="/Success.png" alt="" />
     </div>
   );
 }
 
-export default succes;
+export default success;
+

@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { FormGroup, Label, Input } from "reactstrap";
 import "./App.css";
-
+import { useHistory } from 'react-router-dom';
 function App() {
   const [count, setCount] = useState(1);
   const [extras, setExtras] = useState([]); // seçilen ekstra malzemeler
   const basePrice = 85; // pizza fiyatı
   const extraPrice = 5; // her ekstra malzeme fiyatı
+ const history = useHistory();
 
   const ekstraMalzemeler = [
     "Domates",
@@ -116,7 +117,7 @@ function App() {
             <h4>Sipariş Toplamı</h4>
             <p><strong>Seçilen Ekstralar:</strong> {extras.length * extraPrice}₺</p>
             <p className="total">Toplam: {toplam}₺</p>
-            <button className="order-btn">SİPARİŞ VER</button>
+            <button className="order-btn" onClick={() => history.push('/success')}>SİPARİŞ VER</button>
           </div>
         </div>
       </div>
